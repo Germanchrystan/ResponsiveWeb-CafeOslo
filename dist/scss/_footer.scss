@@ -1,0 +1,23 @@
+footer{
+    background: $Grey;
+    color: $White;
+    height: 25vh;
+    padding: 6em 1em;
+}
+
+.Credits{
+    background: $DarkText;
+    color: $Red;
+    text-align: center;
+    padding: 1em;
+
+    a{
+        color: $White;
+        text-decoration: none;
+        transition: all 0.5s ease-in;
+    }
+
+    a:hover{
+        color:$Red;
+    }
+}

@@ -1,0 +1,51 @@
+.Breakfast{
+    background: url("../Img/Fondo2.jpg") no-repeat;
+    @extend .Containers;
+    padding-top:5%;
+    #{&}__Text{
+        @extend .ItemContainersText;
+        
+        //============================//
+        h1{
+            font-size: $FirstLevelHeading;
+            margin-bottom: 1em;
+        }
+
+
+        
+        p{
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2em;
+        }
+
+        button{
+            background: transparent;
+            outline: none;
+            padding: 15px 20px;
+            border: 3px solid $White;
+            text-transform: uppercase;
+            color: $White;
+            font-size: $Buttons;
+        }
+    }
+}
+
+@media screen and (max-width: 786px){
+    .Breakfast{
+        padding-top: 1em;
+
+        #{&}__Text{
+            width: 80%;
+            h1{
+                margin-bottom: 0.5em;
+                width: 100%;
+            }
+
+            p{
+                width: 90%;
+            }
+        }
+    }
+}
